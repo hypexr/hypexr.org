@@ -1,0 +1,91 @@
+<script language="javascript" type="text/javascript">
+// LOAD THE "ON" BUTTONS
+i0on=new Image();  i0on.src="./gfx/m_top_h.png";
+i1on=new Image();  i1on.src="./gfx/mb_index_h.png";
+i2on=new Image();  i2on.src="./gfx/mb_gnu_h.png";
+i3on=new Image();  i3on.src="./gfx/mb_programming_h.png";
+i4on=new Image();  i4on.src="./gfx/mb_articles_h.png";
+i5on=new Image();  i5on.src="./gfx/mb_photoblog_h.png";
+i6on=new Image();  i6on.src="./gfx/mb_blog_h.png";
+i7on=new Image();  i7on.src="./gfx/mb_links_h.png";
+i8on=new Image();  i8on.src="./gfx/mb_contact_h.png";
+mvon=new Image();  mvon.src="./gfx/mm_v_h.png";
+
+// LOAD THE "OFF" BUTTONS
+i0off=new Image();  i0off.src="./gfx/m_top.png";
+i1off=new Image();  i1off.src="./gfx/mb_index.png";
+i2off=new Image();  i2off.src="./gfx/mb_gnu_g.png";
+i3off=new Image();  i3off.src="./gfx/mb_programming.png";
+i4off=new Image();  i4off.src="./gfx/mb_articles_g.png";
+i5off=new Image();  i5off.src="./gfx/mb_photoblog.png";
+i6off=new Image();  i6off.src="./gfx/mb_blog_g.png";
+i7off=new Image();  i7off.src="./gfx/mb_links.png";
+i8off=new Image();  i8off.src="./gfx/mb_contact_g.png";
+mvoff=new Image();  mvoff.src="./gfx/mm_v.png";
+
+// FUNCTIONS TO SWITCH THE BUTTONS ON MOUSE EVENTS
+function imgOn(whichButton) {
+  document.images[whichButton].src=eval(whichButton+"on.src");
+}
+function imgOff(whichButton) {
+  document.images[whichButton].src=eval(whichButton+"off.src");
+}
+
+// Functions to colapse and raise menu - Updated to use localStorage instead of cookies
+function menuColap(whichMenu) {
+  if( whichMenu == "main" ) {
+    localStorage.setItem("menu_state", "closed");
+    document.getElementById('main_menu').innerHTML = "<a href='javascript:void(0)' onClick=menuExp('main'); return true; onmouseover=imgOn('mv'); window.status=''; return true; onmouseout=imgOff('mv'); window.status=''; return true;><img border="0" src=./gfx/mm_v.png alt='Main Menu Shrunk' name='mv'></a>";
+  }
+  if( whichMenu == "linux" ) {
+    localStorage.setItem("linux_menu_state", "closed");
+    document.getElementById('linux_menu').innerHTML = "<a href='javascript:void(0)' onClick=menuExp('linux'); return true; onmouseover=imgOn('mlv'); window.status=''; return true; onmouseout=imgOff('mlv'); window.status=''; return true;><img border="0" src=./gfx/ml_v.png alt='Linux Menu Shrunk' name='mlv'></a>";
+    document.getElementById('lines').innerHTML = "<img border='0' src='./gfx/lines2.png'>";
+  }
+  if( whichMenu == "programming" ) {
+    localStorage.setItem("programming_menu_state", "closed");
+    document.getElementById('programming_menu').innerHTML = "<a href='javascript:void(0)' onClick=menuExp('programming'); return true; onmouseover=imgOn('mpv'); window.status=''; return true; onmouseout=imgOff('mpv'); window.status=''; return true;><img border="0" src=./gfx/mp_v.png alt='Programming Menu Shrunk' name='mpv'></a>";
+  }
+}
+
+function menuExp(whichMenu) {
+  if( whichMenu == "main" ) {
+    localStorage.setItem("menu_state", "open");
+    document.getElementById('main_menu').innerHTML = getFile("menu.html");
+  }
+  if( whichMenu == "linux" ) {
+    localStorage.setItem("linux_menu_state", "open");
+    document.getElementById('linux_menu').innerHTML = getFile("linux_menu.html");
+    document.getElementById('lines').innerHTML = "<img border='0' src='./gfx/lines.png'>";
+  }
+  if( whichMenu == "programming" ) {
+    localStorage.setItem("programming_menu_state", "open");
+    document.getElementById('programming_menu').innerHTML = getFile("programming_menu.html");
+  }
+}
+
+function getFile(filename)
+  { oxmlhttp = null;
+    try
+      { oxmlhttp = new XMLHttpRequest();
+        oxmlhttp.overrideMimeType("text/xml");
+      }
+    catch(e)
+      { try
+          { oxmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+          }
+        catch(e)
+          { return null;
+          }
+      }
+    if(!oxmlhttp) return null;
+    try
+      { oxmlhttp.open("GET",filename,false);
+        oxmlhttp.send(null);
+      }
+    catch(e)
+      { return null;
+      }
+    return oxmlhttp.responseText;
+  }
+</script>

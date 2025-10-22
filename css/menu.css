@@ -1,0 +1,29 @@
+A:link {
+	text-decoration: none;
+	color: #0033CC;
+	font-weight: normal;
+}
+
+A:visited {
+	text-decoration: none;
+	color: #0033CC;
+	font-weight: normal;
+}
+
+A:hover {
+	color: #555555;
+	font-weight: normal;
+	background: #EEEEF0;
+	border: 1px solid #B0B0B2;
+	border-color: #000000;
+	padding: 0.20em;
+}
+
+A:active {
+	color: #000000;
+	font-weight: normal;
+	background: #EEEEF0;
+	border: 1px solid #B0B0B2;
+	border-color: #000000;
+	padding: 0.20em;
+}
