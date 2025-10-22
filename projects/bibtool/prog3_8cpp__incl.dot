@@ -1,0 +1,22 @@
+digraph inheritance
+{
+  Node21 [shape="box",label="prog3.cpp",fontsize=10,height=0.2,width=0.4,fontname="Helvetica",color="black",style="filled" fontcolor="white"];
+  Node22 -> Node21 [dir=back,color="midnightblue",fontsize=10,style="solid",fontname="Helvetica"];
+  Node22 [shape="box",label="queue",fontsize=10,height=0.2,width=0.4,fontname="Helvetica",color="grey75"];
+  Node23 -> Node21 [dir=back,color="midnightblue",fontsize=10,style="solid",fontname="Helvetica"];
+  Node23 [shape="box",label="bibtool.h",fontsize=10,height=0.2,width=0.4,fontname="Helvetica",color="black",URL="$bibtool_8h.html"];
+  Node24 -> Node23 [dir=back,color="midnightblue",fontsize=10,style="solid",fontname="Helvetica"];
+  Node24 [shape="box",label="iostream",fontsize=10,height=0.2,width=0.4,fontname="Helvetica",color="grey75"];
+  Node25 -> Node23 [dir=back,color="midnightblue",fontsize=10,style="solid",fontname="Helvetica"];
+  Node25 [shape="box",label="fstream",fontsize=10,height=0.2,width=0.4,fontname="Helvetica",color="grey75"];
+  Node26 -> Node23 [dir=back,color="midnightblue",fontsize=10,style="solid",fontname="Helvetica"];
+  Node26 [shape="box",label="string",fontsize=10,height=0.2,width=0.4,fontname="Helvetica",color="grey75"];
+  Node27 -> Node23 [dir=back,color="midnightblue",fontsize=10,style="solid",fontname="Helvetica"];
+  Node27 [shape="box",label="sstream",fontsize=10,height=0.2,width=0.4,fontname="Helvetica",color="grey75"];
+  Node28 -> Node23 [dir=back,color="midnightblue",fontsize=10,style="solid",fontname="Helvetica"];
+  Node28 [shape="box",label="vector",fontsize=10,height=0.2,width=0.4,fontname="Helvetica",color="grey75"];
+  Node29 -> Node23 [dir=back,color="midnightblue",fontsize=10,style="solid",fontname="Helvetica"];
+  Node29 [shape="box",label="stack",fontsize=10,height=0.2,width=0.4,fontname="Helvetica",color="grey75"];
+  Node30 -> Node23 [dir=back,color="midnightblue",fontsize=10,style="solid",fontname="Helvetica"];
+  Node30 [shape="box",label="stdio.h",fontsize=10,height=0.2,width=0.4,fontname="Helvetica",color="grey75"];
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 1.0.1  (Win32)">
+	<META NAME="CREATED" CONTENT="20030304;5270700">
+	<META NAME="CHANGED" CONTENT="20030331;20575464">
+	<STYLE>
+	<!--
+		@page { margin-left: 3.18cm; margin-right: 3.18cm; margin-top: 2.54cm; margin-bottom: 2.54cm }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US">
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Frutiger 55 Roman, sans-serif"><FONT SIZE=3 STYLE="font-size: 13pt"><B><SPAN LANG="en-US">Strong</SPAN>
+User Manual:</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Frutiger 55 Roman, sans-serif">	</FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Frutiger 55 Roman, sans-serif">
+Strong is able to take DIMACS graph benchmark files as command line arguments, insert each vertex into a graph, create edges between the verticies, and scan the final graph for the strong components.  If a line in the DIMACS file begins with a 'c' the line is ignored as a comment.  If the line begins with a 'p' it is the problem line and describes the type of graph, the number of nodes in the graph and the number of edges in the graph.  Any line that begins with an 'e' describes two nodes that are connected by an edge.  Each node following the 'e' should be seperated by a space.  The problem line should occur before any edges and there should only be one problem line.  If the problem line occurs after edges, the edges prior to the problem line will be ignored.  Example DIMACS graph benchmarks can be found at <a href="ftp://dimacs.rutgers.edu/pub/">ftp://dimacs.rutgers.edu/pub/</a>.
+</FONT></P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Frutiger 55 Roman, sans-serif"><B>Strong
+usage:</B></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Frutiger 55 Roman, sans-serif"><SPAN LANG="en-US">
+strong filename1 filename2 filename3 ... filenameN
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Frutiger 55 Roman, sans-serif"><B>Example:</B></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Frutiger 55 Roman, sans-serif">strong
+first.col second.col</FONT></P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Frutiger 55 Roman, sans-serif">Additional
+features include strong's abality to check DIMACS graph benchmark files for correct formating, such as the need for a problem line before any edges are listed, and reports errors when incorrect formating is found.
+</FONT></P>
+</BODY>
+</HTML>

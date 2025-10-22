@@ -1,0 +1,8 @@
+digraph inheritance
+{
+  Node18 [shape="box",label="bibtool.h",fontsize=10,height=0.2,width=0.4,fontname="Helvetica",color="black",style="filled" fontcolor="white"];
+  Node19 -> Node18 [color="midnightblue",fontsize=10,style="solid",fontname="Helvetica"];
+  Node19 [shape="box",label="prog3.cpp",fontsize=10,height=0.2,width=0.4,fontname="Helvetica",color="black",URL="$prog3_8cpp.html"];
+  Node20 -> Node18 [color="midnightblue",fontsize=10,style="solid",fontname="Helvetica"];
+  Node20 [shape="box",label="bibtool.cpp",fontsize=10,height=0.2,width=0.4,fontname="Helvetica",color="black",URL="$bibtool_8cpp.html"];
+}

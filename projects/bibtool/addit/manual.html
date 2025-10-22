@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 1.0.1  (Win32)">
+	<META NAME="CREATED" CONTENT="20030304;5270700">
+	<META NAME="CHANGED" CONTENT="20030331;20575464">
+	<STYLE>
+	<!--
+		@page { margin-left: 3.18cm; margin-right: 3.18cm; margin-top: 2.54cm; margin-bottom: 2.54cm }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US">
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Frutiger 55 Roman, sans-serif"><FONT SIZE=3 STYLE="font-size: 13pt"><B><SPAN LANG="en-US">Bibtool</SPAN>
+User Manual:</B></FONT></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Frutiger 55 Roman, sans-serif">	</FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Frutiger 55 Roman, sans-serif">	Bibtool
+takes multiple command line arguments to create an index of multiple
+bibliography (.bib) files, and search for key names within the .bib
+files.  The first argument or arguments passed are the bibliography
+files that need to be indexed.  The file names entered must be case
+sensitive and include the .bib extension.  The .bib extension must be
+either lower case or upper case and must<SPAN LANG="en-US"> coincide
+</SPAN>with the actual file.  A bibliography file with an extension
+such as .BiB will not be indexed.  Following the<SPAN LANG="en-US">
+bibliography </SPAN>files a index file name may optionally be
+specified.  If this file name is entered the index will be written
+using the specified file name with a .<SPAN LANG="en-US">ndx</SPAN>
+extension.  The bibs file (containing an index of .bib file names)
+will be written with a .<SPAN LANG="en-US">bfs</SPAN> extension.  If
+a index file name is not specified the last .bib file name will be
+used, the .bib will be purged, and a .ndx and .bfs extension will be
+added.  The user may also specify a file containing key names,
+authors, or titles to search for in the bibliography files.  This
+should be done by adding a -s followed by the file name containing
+the key names to search for.  If an author is being searched for a
+single word from the authors name should be<SPAN LANG="en-US">
+preceded </SPAN>by an &ldquo;a=&rdquo; and a &ldquo;t=&rdquo; if it
+is a title.  If the -s [searchfile] is specified a searchfile.out
+will be written to disk containing information about where the key
+name was found.  The program is ran with only bibliography filenames
+as arguments it will only create the .ndx and .bfs index files of all
+entries in the .bib files.</FONT></P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Frutiger 55 Roman, sans-serif"><B>Bibtool
+usage:</B></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Frutiger 55 Roman, sans-serif"><SPAN LANG="en-US">bibtool</SPAN>
+datafile<SUB>1</SUB> datafile<SUB>2</SUB> ... datafile<SUB>n</SUB>
+[index_filename] [-s searchList_filename]</FONT></P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Frutiger 55 Roman, sans-serif"><B>Example:</B></FONT></P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Frutiger 55 Roman, sans-serif">bibtool
+first.bib second.bib bibIndex -s searchNames</FONT></P>
+<P STYLE="margin-bottom: 0cm"><BR>
+</P>
+<P STYLE="margin-bottom: 0cm"><FONT FACE="Frutiger 55 Roman, sans-serif">Additional
+features include<SPAN LANG="en-US"> bibtool's ability </SPAN>to
+ignore filenames that do not have a .bib extension and to accept .bib
+filenames that do not exist followed by an error message to the user
+that bibtool was not able to open the file.  If one or more .bib
+files fails to open it will continue to create the index files using
+the bibliography file/files that are<SPAN LANG="en-US"> open-able. 
+</SPAN>It reports all instances of duplicate key names that it finds
+in any of the .bib files.  It is also able to report invalid
+formating within the .bib files, such as if an entry does not end
+properly when the end of the file is reached.  It would then continue
+to index the rest of the bibliography files.  It is not recommended
+that bibtool be used with key names that are more than 20 characters
+in size.  If they are more than 20 characters the characters
+following the 20<SUP>th</SUP> will be truncated.</FONT></P>
+</BODY>
+</HTML>
