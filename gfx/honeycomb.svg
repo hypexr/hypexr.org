@@ -1,0 +1,22 @@
+<svg width="100" height="87" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="honeycomb" x="0" y="0" width="100" height="87" patternUnits="userSpaceOnUse">
+      <polygon points="25,0 75,0 100,43.5 75,87 25,87 0,43.5"
+               fill="#fffdf5"
+               stroke="#f7d654"
+               stroke-width="0.5"
+               opacity="0.3"/>
+      <polygon points="125,0 175,0 200,43.5 175,87 125,87 100,43.5"
+               fill="#fffdf5"
+               stroke="#f7d654"
+               stroke-width="0.5"
+               opacity="0.3"/>
+      <polygon points="75,87 125,87 150,130.5 125,174 75,174 50,130.5"
+               fill="#fffdf5"
+               stroke="#f7d654"
+               stroke-width="0.5"
+               opacity="0.3"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#honeycomb)"/>
+</svg>
