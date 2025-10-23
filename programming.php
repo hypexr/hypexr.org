@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Programming Projects</title>
+<meta name="Keywords" content="linux,programming,unix,help,c++,open source,chico,computer science, slackware,gentoo,red hat, programming,csu chico,csci 151,quake II, quake 2, quake2, g++,gnu,scott rippee, scott, scott@hypexr.org">
+<link rel="stylesheet" href="./css/ss.css" type="text/css">
+<script language="javascript" type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+<div id="top_nav"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+    <td valign="top">
+      <center>
+<center>
+<table border="0" cellspacing="0" cellpadding="0" width=100%>
+  <tr>
+
+    <td class="content_body" width=100% valign=top>
+    <div style="padding: 0 4em;">
+    <br>
+    <br>
+    <table border="0" cellspacing="0" cellpadding="0" width=100%>
+      <tr>
+	<td>
+	    <H2 class="content_date">&nbsp;University&nbsp;Projects&nbsp;
+	</td>
+	    <td width=100%>
+	    <br>
+	</td>
+      </tr>
+      <tr>
+	<td class="content_news" colspan=2>
+
+	<table class="content_links" border="0" cellspacing="0" cellpadding="5" width=100%>
+	  <td valign="top" width=155px>
+	  <!--<a class="content" HREF="./nnes.html">-->Dr. Renner's Neural Network Ensemble Simulator (NNES)<!--</a>-->
+	  </td>
+	  <td width="5px">
+	  <br>
+	  </td>
+	  <td valign="top">
+	  <p>The Neural Network Ensemble Simulator (NNES) was developed by <a class="content" HREF="http://www.ecst.csuchico.edu/~renner/">Dr. Renner</a> and has continued development under several of her graduate students.  It can solve complex problems with the use of simulated neural networks by utilizing cross validation 1 & 2 and combined ensembles of students who's data is rotated to obtain a more general solution with a limited set of data.</p>
+	  </p>My project was to combine the projects that graduate students had completed based on NNES.  Two of these were a GUI front end and a distributed version.  They are now combined in version 5.00</p>
+	  </td>
+	  <td width="5px">
+	      <br>
+	  </td>
+	  <td>
+	      <!--<a href="./nnes.html">--><img border="0" src="./gfx/head.png"><!--</a>-->
+	  </td>
+	</table>
+
+	<div class="content_gap"><br></div>
+
+	<table class="content_links" border="0" cellspacing="0" cellpadding="5" width=100%>
+	  <td valign="top" width=155px>
+	  <!--<a class="content" HREF="./gpl.html">-->Compiler: Game Programming Language<!--</a>-->
+	  </td>
+	  <td width="5px">
+	  <br>
+	  </td>
+	  <td valign="top">
+	      <p>This is a compiler for the Game Programming Language (GPL).  Starting with a grammar, my friend and I developed a compiler using flex, bison, and C++ to parse and execute GPL code.</p>
+	  </td>
+	  <td width="5px">
+	      <br>
+	  </td>
+	  <td>
+	      <!--<a href="./gpl.html">--><img border="0" src="./gfx/ttr.png"><!--</a>-->
+	  </td>
+	</table>
+
+	<div class="content_gap"><br></div>
+
+	<table class="content_links" border="0" cellspacing="0" cellpadding="5" width=100%>
+	  <td valign="top" width=155px>
+	  <a class="content" HREF="./projects/bibtool/index.html">Bibtool</a>
+	  </td>
+	  <td width="5px">
+	  <br>
+	  </td>
+	  <td valign="top">
+	      <p>LaTeX is able to use BibTeX bibliography files to cite references. When a user is dealing with multiple large BibTeX bibliography it can be difficult to manage all of the entries. Bibtool indexes all of the entries from multiple bibliography files so they can be easily referenced.</p><p>This page has project info, planning, references, and doxygen generated documentation.</p>
+	  </td>
+	  <td width="5px">
+	      <br>
+	  </td>
+	  <td>
+	      <a href="./projects/bibtool/index.html"><img border="0" src="./gfx/bib_chart.png"></a>
+	  </td>
+	</table>
+
+	<div class="content_gap"><br></div>
+
+	<table class="content_links" border="0" cellspacing="0" cellpadding="5" width=100%>
+	  <td valign="top" width=155px>
+	  <!--<a class="content" HREF="./linker_loader.html">-->Linker/Loader Simulator<!--</a>-->
+	  </td>
+	  <td width="5px">
+	  <br>
+	  </td>
+	  <td valign="top">
+	      <p>This program mimics the behavior of a linker loader.  Starting with a text file with several entries resembling source code files it moves through them recursively creating data structures along the way.  When I find the dependency that I am looking for it begins to fall back down the recursive tree, filling in the gaps as it goes.</p>
+	  </td>
+	  <td width="5px">
+	      <br>
+	  </td>
+	  <td>
+	      <!--<a href="./linker_loader.html">--><img border="0" src="./gfx/ll.png"><!--</a>-->
+	  </td>
+	</table>
+
+	<div class="content_gap"><br></div>
+
+	<table class="content_links" border="0" cellspacing="0" cellpadding="5" width=100%>
+	  <td valign="top" width=155px>
+	  <!--<a class="content" HREF="./asteroids_game.html">-->Asteroids<!--</a>-->
+	  </td>
+	  <td width="5px">
+	  <br>
+	  </td>
+	  <td valign="top">
+	  <p>An asteroids game in C++ for the Macintosh OS with a group of 2 other programmers using vector graphics, the Mac API, linked lists for game objects, and class inheritance.</p>
+	  </td>
+	  <td width="5px">
+	      <br>
+	  </td>
+	  <td>
+	      <!--<a href="./asteroids_game.html">--><img border="0" src="./gfx/ast.png"><!--</a>-->
+	  </td>
+	</table>
+
+	<div class="content_gap"><br></div>
+
+	<table class="content_links" border="0" cellspacing="0" cellpadding="5" width=100%>
+	  <td valign="top" width=155px>
+	  <a class="content" HREF="./projects/strong_graph/index.html">Graph Strong Component Finder</a>
+	  </td>
+	  <td width="5px">
+	  <br>
+	  </td>
+	  <td valign="top">
+	  <p>Strong is able to take DIMACS graph benchmark files as command line arguments, insert each vertex into a graph, create edges between the vertices, and scan the final graphs for the strong components.</p></p>This page has project info, planning, references, and doxygen generated documentation.</p>
+	  </td>
+	  <td width="5px">
+	      <br>
+	  </td>
+	  <td>
+	      <a href="./projects/strong_graph/index.html"><img border="0" src="./gfx/strong.png"></a>
+	  </td>
+	</table>
+
+	<div class="content_gap"><br></div>
+
+    <table class="content_links" border="0" cellspacing="0" cellpadding="5" width=100%>
+      <td valign="top" width=155px>
+      <a class="content" HREF="http://www.hypexr.org/projects/faux/">Mock Space Travel Exploration Site</a>
+      </td>
+      <td width="5px">
+      <br>
+      </td>
+      <td valign="top">
+	  <p>Space Expeditions Inc. Offering cosmic experiences varying from on land space simulations to beyond the imagination real space adventures.</p>
+      </td>
+	  <td width="5px">
+	      <br>
+	  </td>
+	  <td>
+	      <a href="http://www.hypexr.org/projects/faux/"><img border="0" src="./gfx/space_thumb.png"></a>
+	  </td>
+    </table>
+
+    <div class="content_gap"><br></div>
+
+    <table class="content_links" border="0" cellspacing="0" cellpadding="5" width=100%>
+      <td valign="top" width=155px>
+      <a class="content" HREF="http://www.hypexr.org/projects/digital/">Mock Web Design Company Site</a>
+      </td>
+      <td width="5px">
+      <br>
+      </td>
+      <td valign="top">
+	  <p>Digital Web Design offering professional web design as well as maintenance at a very affordable price. We will work closely with your business to provide you with a web presence that appropriately projects the image of your company.</p>
+      </td>
+	  <td width="5px">
+	      <br>
+	  </td>
+	  <td>
+	      <a href="http://www.hypexr.org/projects/digital/"><img border="0" src="./gfx/digital_thumb.png"></a>
+	  </td>
+    </table>
+
+  </tr>
+</table>
+
+<br>
+    </div>
+</td>
+
+
+</tr>
+</table>
+</center>
+</td>
+</tr>
+</table>
+<br>
+</body>
+</html>
