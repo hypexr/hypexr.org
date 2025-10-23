@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Page Not Found - Redirecting...</title>
+  <link rel="stylesheet" href="css/ss.css" type="text/css">
+  <script type="text/javascript">
+    // Redirect .php URLs to .html
+    (function() {
+      var path = window.location.pathname;
+
+      // Check if the URL ends with .php
+      if (path.endsWith('.php')) {
+        // Replace .php with .html and redirect
+        var newUrl = path.replace(/\.php$/, '.html');
+        window.location.replace(newUrl);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <div id="top_nav"></div>
+  <script language="javascript" type="text/javascript" src="js/common.js"></script>
+
+  <div style="padding: 40px; text-align: center;">
+    <h1>404 - Page Not Found</h1>
+    <p>The page you're looking for doesn't exist.</p>
+    <p>If you were looking for a .php file, you should be automatically redirected to the .html version.</p>
+    <p><a href="/">Return to home page</a></p>
+  </div>
+</body>
+</html>
